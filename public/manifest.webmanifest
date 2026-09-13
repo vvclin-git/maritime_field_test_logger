@@ -1,0 +1,4 @@
+{
+  "name": "Sea Trial Logger", "short_name": "Sea Trial", "lang": "zh-Hant", "start_url": ".", "scope": ".", "display": "standalone", "background_color": "#eef3f3", "theme_color": "#062b36",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

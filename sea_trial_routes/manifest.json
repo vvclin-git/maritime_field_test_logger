@@ -1,0 +1,142 @@
+[
+  {
+    "scenario_id": 1,
+    "angle": "A",
+    "title_zh": "向浮標靠近",
+    "start_distance_m": 250,
+    "filename": "S01_A_buoy_approach.png",
+    "source_slide": 2,
+    "width_px": 1222,
+    "height_px": 820
+  },
+  {
+    "scenario_id": 1,
+    "angle": "B",
+    "title_zh": "向浮標靠近",
+    "start_distance_m": 250,
+    "filename": "S01_B_buoy_approach.png",
+    "source_slide": 3,
+    "width_px": 1221,
+    "height_px": 874
+  },
+  {
+    "scenario_id": 2,
+    "angle": "A",
+    "title_zh": "他船直線移動（兩船同向）",
+    "start_distance_m": 500,
+    "filename": "S02_A_same_direction.png",
+    "source_slide": 4,
+    "width_px": 1058,
+    "height_px": 949
+  },
+  {
+    "scenario_id": 2,
+    "angle": "B",
+    "title_zh": "他船直線移動（兩船同向）",
+    "start_distance_m": 500,
+    "filename": "S02_B_same_direction.png",
+    "source_slide": 5,
+    "width_px": 1058,
+    "height_px": 949
+  },
+  {
+    "scenario_id": 3,
+    "angle": "A",
+    "title_zh": "他船直線移動（兩船對向）",
+    "start_distance_m": 500,
+    "filename": "S03_A_opposite_direction.png",
+    "source_slide": 6,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 3,
+    "angle": "B",
+    "title_zh": "他船直線移動（兩船對向）",
+    "start_distance_m": 500,
+    "filename": "S03_B_opposite_direction.png",
+    "source_slide": 7,
+    "width_px": 1058,
+    "height_px": 949
+  },
+  {
+    "scenario_id": 4,
+    "angle": "A",
+    "title_zh": "他船橫線移動（遠離自船）",
+    "start_distance_m": 500,
+    "filename": "S04_A_crossing_away.png",
+    "source_slide": 8,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 4,
+    "angle": "B",
+    "title_zh": "他船橫線移動（遠離自船）",
+    "start_distance_m": 500,
+    "filename": "S04_B_crossing_away.png",
+    "source_slide": 10,
+    "width_px": 1058,
+    "height_px": 949
+  },
+  {
+    "scenario_id": 5,
+    "angle": "A",
+    "title_zh": "他船橫線移動（靠近自船）",
+    "start_distance_m": 500,
+    "filename": "S05_A_crossing_toward.png",
+    "source_slide": 9,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 5,
+    "angle": "B",
+    "title_zh": "他船橫線移動（靠近自船）",
+    "start_distance_m": 500,
+    "filename": "S05_B_crossing_toward.png",
+    "source_slide": 11,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 6,
+    "angle": "A",
+    "title_zh": "他船斜切移動（遠離自船）",
+    "start_distance_m": 500,
+    "filename": "S06_A_diagonal_away.png",
+    "source_slide": 12,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 6,
+    "angle": "B",
+    "title_zh": "他船斜切移動（遠離自船）",
+    "start_distance_m": 500,
+    "filename": "S06_B_diagonal_away.png",
+    "source_slide": 14,
+    "width_px": 1058,
+    "height_px": 949
+  },
+  {
+    "scenario_id": 7,
+    "angle": "A",
+    "title_zh": "他船斜切移動（靠近自船）",
+    "start_distance_m": 500,
+    "filename": "S07_A_diagonal_toward.png",
+    "source_slide": 13,
+    "width_px": 1058,
+    "height_px": 948
+  },
+  {
+    "scenario_id": 7,
+    "angle": "B",
+    "title_zh": "他船斜切移動（靠近自船）",
+    "start_distance_m": 500,
+    "filename": "S07_B_diagonal_toward.png",
+    "source_slide": 15,
+    "width_px": 1058,
+    "height_px": 948
+  }
+]

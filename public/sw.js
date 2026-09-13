@@ -1,0 +1,7 @@
+const CACHE='sea-trial-v2';
+const BASE=new URL(self.registration.scope).pathname;
+const asset=x=>new URL(x,self.registration.scope).pathname;
+const ROUTES=['S01_A_buoy_approach.png','S01_B_buoy_approach.png','S02_A_same_direction.png','S02_B_same_direction.png','S03_A_opposite_direction.png','S03_B_opposite_direction.png','S04_A_crossing_away.png','S04_B_crossing_away.png','S05_A_crossing_toward.png','S05_B_crossing_toward.png','S06_A_diagonal_away.png','S06_B_diagonal_away.png','S07_A_diagonal_toward.png','S07_B_diagonal_toward.png'];
+self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);const index=asset('index.html');const res=await fetch(index);const html=await res.clone().text();const built=[...html.matchAll(/(?:src|href)="([^"]*assets\/[^"]+)"/g)].map(x=>asset(x[1]));await c.put(index,res);await c.addAll([BASE,asset('manifest.webmanifest'),asset('favicon.svg'),asset('icon.svg'),...built,...ROUTES.map(x=>asset('routes/'+x))]);await self.skipWaiting()})()));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(xs=>Promise.all(xs.filter(x=>x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim()).then(()=>self.clients.matchAll().then(cs=>cs.forEach(c=>c.postMessage({type:'OFFLINE_READY'}))))));
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(x=>x||fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(asset('index.html'))))});
