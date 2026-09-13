@@ -1,4 +1,4 @@
-const CACHE='sea-trial-v2';
+const CACHE='sea-trial-v3';
 const BASE=new URL(self.registration.scope).pathname;
 const asset=x=>new URL(x,self.registration.scope).pathname;
 const ROUTES=['S01_A_buoy_approach.png','S01_B_buoy_approach.png','S02_A_same_direction.png','S02_B_same_direction.png','S03_A_opposite_direction.png','S03_B_opposite_direction.png','S04_A_crossing_away.png','S04_B_crossing_away.png','S05_A_crossing_toward.png','S05_B_crossing_toward.png','S06_A_diagonal_away.png','S06_B_diagonal_away.png','S07_A_diagonal_toward.png','S07_B_diagonal_toward.png'];
